@@ -166,7 +166,7 @@
                 <Personality template="timerclk" version="3.0" instance="OPPU-xn3eqE">
                     <Block location="srss[0].clock[0].timerclk[0]" locked="true"/>
                 </Personality>
-                <Personality template="power_v4" version="1.0" instance="lMGDNnoZghg">
+                <Personality template="power_v4" version="1.1" instance="lMGDNnoZghg">
                     <Block location="srss[0].power[0]" locked="true"/>
                     <Parameters>
                         <Param id="actPwrMode" value="POWER_PROFILE_LP"/>
@@ -212,7 +212,7 @@
                         <Param id="description" value="m33s_nvm"/>
                         <Param id="domain" value="7cPl230VJyc"/>
                         <Param id="memoryId" value="RRAM"/>
-                        <Param id="offset" value="0x00000000"/>
+                        <Param id="offset" value="0x00011000"/>
                         <Param id="regionId" value="m33s_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x0001A000"/>
@@ -224,10 +224,10 @@
                         <Param id="description" value="m33_nvm"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
                         <Param id="memoryId" value="RRAM"/>
-                        <Param id="offset" value="0x0001C000"/>
+                        <Param id="offset" value="0x0002D000"/>
                         <Param id="regionId" value="m33_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00030000"/>
+                        <Param id="size" value="0x0001C000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="Qg-VSbBkSUE">
@@ -236,10 +236,10 @@
                         <Param id="description" value="m55_nvm"/>
                         <Param id="domain" value="P8kQl2DRYUQ"/>
                         <Param id="memoryId" value="RRAM"/>
-                        <Param id="offset" value="0x0004E000"/>
+                        <Param id="offset" value="0x0004B000"/>
                         <Param id="regionId" value="m55_nvm"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00030000"/>
+                        <Param id="size" value="0x0001C000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="CehRmLIVyTc">
@@ -296,7 +296,7 @@
                         <Param id="description" value="m33s_shared"/>
                         <Param id="domain" value="7cPl230VJyc"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00001000"/>
+                        <Param id="offset" value="0x00002000"/>
                         <Param id="regionId" value="m33s_shared"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00004000"/>
@@ -308,7 +308,7 @@
                         <Param id="description" value="m33s_code"/>
                         <Param id="domain" value="7cPl230VJyc"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00005000"/>
+                        <Param id="offset" value="0x00006000"/>
                         <Param id="regionId" value="m33s_code"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00031000"/>
@@ -320,7 +320,7 @@
                         <Param id="description" value="m33s_data"/>
                         <Param id="domain" value="7cPl230VJyc"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00036000"/>
+                        <Param id="offset" value="0x00037000"/>
                         <Param id="regionId" value="m33s_data"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00021000"/>
@@ -332,10 +332,10 @@
                         <Param id="description" value="m33_code"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00057000"/>
+                        <Param id="offset" value="0x00058000"/>
                         <Param id="regionId" value="m33_code"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
-                        <Param id="size" value="0x00066000"/>
+                        <Param id="size" value="0x00065000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="memory_region_data" version="1.0" instance="rF4o_hNHwc0">
@@ -392,7 +392,7 @@
                         <Param id="description" value="m33s_trailer"/>
                         <Param id="domain" value="7cPl230VJyc"/>
                         <Param id="memoryId" value="RRAM"/>
-                        <Param id="offset" value="0x0001A000"/>
+                        <Param id="offset" value="0x0002B000"/>
                         <Param id="regionId" value="m33s_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00002000"/>
@@ -404,7 +404,7 @@
                         <Param id="description" value="m33_trailer"/>
                         <Param id="domain" value="Xo07Phg6oz8"/>
                         <Param id="memoryId" value="RRAM"/>
-                        <Param id="offset" value="0x0004C000"/>
+                        <Param id="offset" value="0x00049000"/>
                         <Param id="regionId" value="m33_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00002000"/>
@@ -416,7 +416,7 @@
                         <Param id="description" value="m55_trailer"/>
                         <Param id="domain" value="P8kQl2DRYUQ"/>
                         <Param id="memoryId" value="RRAM"/>
-                        <Param id="offset" value="0x0007E000"/>
+                        <Param id="offset" value="0x00067000"/>
                         <Param id="regionId" value="m55_trailer"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00002000"/>
@@ -428,10 +428,46 @@
                         <Param id="description" value="extended_boot_reserved"/>
                         <Param id="domain" value="kTqxq_31FkI"/>
                         <Param id="memoryId" value="SRAM"/>
-                        <Param id="offset" value="0x00000000"/>
+                        <Param id="offset" value="0x00001000"/>
                         <Param id="regionId" value="extended_boot_reserved"/>
                         <Param id="reservedGuid" value="USER_DEFINED"/>
                         <Param id="size" value="0x00001000"/>
+                    </Parameters>
+                </Personality>
+                <Personality template="memory_region_data" version="1.0" instance="hApHC-bEJs8">
+                    <Block location="vres[0].memory_region_data[21]" locked="true"/>
+                    <Parameters>
+                        <Param id="description" value=""/>
+                        <Param id="domain" value="kTqxq_31FkI"/>
+                        <Param id="memoryId" value="RRAM"/>
+                        <Param id="offset" value="0x00000000"/>
+                        <Param id="regionId" value="extended_boot_reserved"/>
+                        <Param id="reservedGuid" value="extended_boot_reserved"/>
+                        <Param id="size" value="0x00011000"/>
+                    </Parameters>
+                </Personality>
+                <Personality template="memory_region_data" version="1.0" instance="yCaN5C0uz-I">
+                    <Block location="vres[0].memory_region_data[22]" locked="true"/>
+                    <Parameters>
+                        <Param id="description" value=""/>
+                        <Param id="domain" value="kTqxq_31FkI"/>
+                        <Param id="memoryId" value="SRAM"/>
+                        <Param id="offset" value="0x00000000"/>
+                        <Param id="regionId" value="extended_boot_sram_reserved"/>
+                        <Param id="reservedGuid" value="extended_boot_sram_reserved"/>
+                        <Param id="size" value="0x00001000"/>
+                    </Parameters>
+                </Personality>
+                <Personality template="memory_region_data" version="1.0" instance="7eiktho3RMY">
+                    <Block location="vres[0].memory_region_data[23]" locked="true"/>
+                    <Parameters>
+                        <Param id="description" value=""/>
+                        <Param id="domain" value="kTqxq_31FkI"/>
+                        <Param id="memoryId" value="RRAM"/>
+                        <Param id="offset" value="0x0006A000"/>
+                        <Param id="regionId" value="reserved_region"/>
+                        <Param id="reservedGuid" value="reserved_region"/>
+                        <Param id="size" value="0x00016000"/>
                     </Parameters>
                 </Personality>
                 <Personality template="protection" version="1.0" instance="lyICW4XqF-w">
@@ -439,7 +475,8 @@
                     <Parameters>
                         <Param id="pcSwitch" value="false"/>
                         <Param id="secureDebuggerAccess" value="true"/>
-                        <Param id="type" value="SECURE_CUSTOM"/>
+                        <Param id="type" value="NON_SECURE"/>
+                        <Param id="validation_security_boundary" value="SECURE"/>
                     </Parameters>
                     <Personality template="domain0" instance="7cPl230VJyc">
                         <Block location="vres[0].protection[0].domain[0]" locked="false">
@@ -487,12 +524,9 @@
                 <Personality template="protection_mpc" version="1.0" instance="VVG3pZNy_Zc">
                     <Block location="vres[0].protection[0].mpc[0]" locked="true"/>
                     <Parameters>
-                        <Param id="response0" value="CY_MPC_RZWI"/>
                         <Param id="response1" value="CY_MPC_RZWI"/>
                         <Param id="response2" value="CY_MPC_RZWI"/>
                         <Param id="response3" value="CY_MPC_RZWI"/>
-                        <Param id="response4" value="CY_MPC_RZWI"/>
-                        <Param id="response5" value="CY_MPC_RZWI"/>
                     </Parameters>
                 </Personality>
             </BlockConfig>

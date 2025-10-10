@@ -256,7 +256,7 @@ static inline uint32_t cy_AhbRemapAddr(const void *addr)
       ((uint32_t)addr < (CY_RRAM_BASE + CY_RRAM_SIZE)))
   {
     offset = (uint32_t)addr - CY_RRAM_BASE;
-    remapAddr =  CY_RRAM_CBUS_BASE + offset;
+    remapAddr = CY_RRAM_CBUS_BASE + offset;
   }/* no remapping, addr not in range */
   else
   {

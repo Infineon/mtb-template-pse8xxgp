@@ -460,13 +460,13 @@ void Cy_SysEnableCM55(MXCM55_Type *CM55Base, uint32_t vectorTableOffset, uint32_
     mtb_srf_invec_ns_t* inVec = NULL;
     mtb_srf_outvec_ns_t* outVec = NULL;
     mtb_srf_output_ns_t* output = NULL;
+    cy_pdl_syspm_srf_sysenablecm55_in_t input_args;
+    input_args.vectorTableOffset = vectorTableOffset;
+    input_args.waitus = waitus;
 
     result = mtb_srf_pool_allocate(&cy_pdl_srf_default_pool, &inVec, &outVec, 0UL);
     CY_ASSERT_L2(CY_RSLT_SUCCESS == result);
 
-    uint32_t input_base[2U];
-    input_base[0U] = vectorTableOffset;
-    input_base[1U] = waitus;
     cy_pdl_invoke_srf_args invoke_args =
     {
         .inVec = inVec,
@@ -476,8 +476,8 @@ void Cy_SysEnableCM55(MXCM55_Type *CM55Base, uint32_t vectorTableOffset, uint32_
         .submodule_id = CY_PDL_SECURE_SUBMODULE_SYSPM,
         .base = CM55Base,
         .sub_block = 0UL,
-        .input_base = (uint8_t*)input_base,
-        .input_len = sizeof(input_base),
+        .input_base = (uint8_t*)(&input_args),
+        .input_len = sizeof(input_args),
         .output_base = NULL,
         .output_len = 0UL,
         .invec_bases = NULL,
@@ -593,11 +593,12 @@ void Cy_SysResetCM55(MXCM55_Type *CM55Base, uint32_t waitus)
     mtb_srf_invec_ns_t* inVec = NULL;
     mtb_srf_outvec_ns_t* outVec = NULL;
     mtb_srf_output_ns_t* output = NULL;
+    cy_pdl_syspm_srf_sysresetcm55_in_t input_args;
+    input_args.waitus = waitus;
 
     result = mtb_srf_pool_allocate(&cy_pdl_srf_default_pool, &inVec, &outVec, 0UL);
     CY_ASSERT_L2(CY_RSLT_SUCCESS == result);
 
-    uint32_t input_base = waitus;
     cy_pdl_invoke_srf_args invoke_args =
     {
         .inVec = inVec,
@@ -607,8 +608,8 @@ void Cy_SysResetCM55(MXCM55_Type *CM55Base, uint32_t waitus)
         .submodule_id = CY_PDL_SECURE_SUBMODULE_SYSPM,
         .base = CM55Base,
         .sub_block = 0UL,
-        .input_base = (uint8_t*)(&input_base),
-        .input_len = sizeof(input_base),
+        .input_base = (uint8_t*)(&input_args),
+        .input_len = sizeof(input_args),
         .output_base = NULL,
         .output_len = 0UL,
         .invec_bases = NULL,
