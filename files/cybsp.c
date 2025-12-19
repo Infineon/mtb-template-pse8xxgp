@@ -33,7 +33,6 @@
 #if ((CY_SYSTEM_CPU_M33) && defined(COMPONENT_NON_SECURE_DEVICE)) || (CY_SYSTEM_CPU_M55)
 #include "cycfg_protection.h"
 #endif
-#include "cy_ipc_sema.h"
 #ifndef CYBSP_DISABLE_SRF_INIT
 #if defined(COMPONENT_SECURE_DEVICE)
 #include "mtb_srf.h"

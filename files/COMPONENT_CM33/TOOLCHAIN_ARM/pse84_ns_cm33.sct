@@ -128,6 +128,12 @@ LR_XIP_PORT0 (CYMEM_CM33_0_m33_nvm_sel_START + MCUBOOT_HEADER_SIZE) (CYMEM_CM33_
     *(.cy_shared_socmem)
   }
 
+  /* A region for the GPU buffer */
+  cy_gfx_mem CYMEM_CM33_0_gfx_mem_START CYMEM_CM33_0_gfx_mem_SIZE
+  {
+    *(.cy_gpu_buf)
+  }
+
   /* A reserved region for the trail space for the signature used by the bootloader - do not place any code here */
   cy_trailer (CYMEM_CM33_0_m33_trailer_sel_START) EMPTY CYMEM_CM33_0_m33_trailer_SIZE
   {
@@ -161,17 +167,5 @@ LR_SRAM CYMEM_CM33_0_m33_data_START CYMEM_CM33_0_m33_data_SIZE
   /* A region for stack */
   ARM_LIB_STACK __STACK_TOP EMPTY -__STACK_SIZE
   {
-  }
-}
-
-
-/* System SRAM (SoCMEM), 5MB */
-/* Note. This load region must not contain any loadable data; only UNINIT or BSS execution regions are allowed */
-LR_SOCMEM CYMEM_CM33_0_gfx_mem_START CYMEM_CM33_0_gfx_mem_SIZE
-{
-  /* A region for the GPU buffer */
-  cy_gfx_mem CYMEM_CM33_0_gfx_mem_START CYMEM_CM33_0_gfx_mem_SIZE
-  {
-    *(.cy_gpu_buf)
   }
 }

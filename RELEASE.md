@@ -1,6 +1,10 @@
 # ModusToolbox PSE8XXGP BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.2.0
+TBD
+#### v1.1.0
+Minor bug-fixes
 #### v1.0.0
 Initial release
 

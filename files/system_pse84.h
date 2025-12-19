@@ -57,7 +57,7 @@
 * \note If the start of the Cortex-M55 application image is changed, the value
 * of the \ref CY_CORTEX_M55_APPL_ADDR should also be changed. The
 * \ref CY_CORTEX_M55_APPL_ADDR macro should be used as the parameter for the
-* Cy_SysEnableCM55() function call.
+* Cy_SysCM55Enable() function call.
 *
 *
 * \subsection group_system_config_device_initialization_edge Device Initialization
@@ -203,16 +203,13 @@ extern "C" {
 * \addtogroup group_system_config_system_macro_edge
 * \{
 */
-#if (CY_SYSTEM_CPU_CM33 == 1UL) || defined(CY_DOXYGEN)
-    /** The Cortex-M33 startup driver identifier */
-    #define CY_STARTUP_M33_ID               ((uint32_t)((uint32_t)((0x10U) & 0x3FFFU) << 18U))
-#endif /* (CY_SYSTEM_CPU_CM33 == 1UL) */
 
+/** The Cortex-M33 startup driver identifier */
+#define CY_STARTUP_M33_ID               ((uint32_t)((uint32_t)((0x10U) & 0x3FFFU) << 18U))
 
-#if (CY_SYSTEM_CPU_CM55 == 1UL) || defined(CY_DOXYGEN)
-    /** The Cortex-M55 startup driver identifier */
-    #define CY_STARTUP_M55_ID               ((uint32_t)((uint32_t)((0x11U) & 0x3FFFU) << 18U))
-#endif /* (CY_SYSTEM_CPU_CM55 == 1UL) */
+/** The Cortex-M55 startup driver identifier */
+#define CY_STARTUP_M55_ID               ((uint32_t)((uint32_t)((0x11U) & 0x3FFFU) << 18U))
+
 /** \} group_system_config_system_macro_edge */
 
 /**
