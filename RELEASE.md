@@ -1,10 +1,13 @@
 # ModusToolbox PSE8XXGP BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.3.0
+- Updated BSP template dependencies
+- Added CYBSP_MCUBOOT_HEADER_SIZE define to bsp.mk
 #### v1.2.0
-* Renamed functions to move core name before command ( e.g. Cy_SysEnableCM55 -> Cy_SysCM55Enable ). The old names are retained as aliases for compatibility.
-* Added setting of debug port policy for Cy_SysCM55Enable
-* In Cy_SysU55Enable, wait until the PPU disablement has propagated before de-initializing the corresponding Peri group slave.
+- Enhanced API naming for CM55/U55/CM33 special operations while maintaining backward compatibility
+  - Added CM55 debug mode configuration option during enablement
+- Updated documentation
 #### v1.1.0
 Minor bug-fixes
 #### v1.0.0
