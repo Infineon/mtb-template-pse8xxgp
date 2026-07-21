@@ -33,7 +33,6 @@ BSP_COMPONENTS:=
 
 # Any additional defines to apply when using this board.
 BSP_DEFINES:=
-BSP_DEFINES+=CYBSP_MCUBOOT_HEADER_SIZE=0x400
 
 # Path to the flash loaders to patch for this board
 CY_QSPI_FLM_DIR?=$(MTB_TOOLS__TARGET_DIR)/config/FlashLoaders/
