@@ -1,0 +1,1 @@
+files/cyreservedresources_gpgo.epc2:config/cyreservedresources.list

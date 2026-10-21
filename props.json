@@ -2,7 +2,7 @@
     "core": {
         "id": "b9416fdf-7782-52c6-b5cb-4f2380a3ff69",
         "name": "mtb-template-pse8xxgp",
-        "version": "1.4.0.2539"
+        "version": "1.5.0.3542"
     },
     "opt": {
         "props": {
@@ -14,7 +14,7 @@
                         "udd_key": "Security",
                         "EPC2": {
                             "files": [
-                                "filelist/reserved-epc2.txt",
+                                "filelist/reserved-epc2-gpgo.txt",
                                 "filelist/psoc_edge.txt",
                                 "filelist/pse84.txt"
                             ],
@@ -31,7 +31,7 @@
                         },
                         "EPC4": {
                             "files": [
-                                "filelist/reserved-epc4.txt",
+                                "filelist/reserved-epc4-gpgo.txt",
                                 "filelist/psoc_edge.txt",
                                 "filelist/pse84.txt"
                             ],
@@ -88,36 +88,6 @@
                 ]
             },
             "define_sets": {
-                "bsp_config_defines": [
-                    {
-                        "description": "Call the function cybsp_post_cfg_init after init_cycfg_all to perform custom initialization steps",
-                        "display": "Custom step after configurator init",
-                        "options": [
-                            {
-                                "default": false,
-                                "define": "CYBSP_POST_CFG_INIT",
-                                "display": "Enabled",
-                                "value": ""
-                            }
-                        ],
-                        "required": false,
-                        "type": "choice"
-                    },
-                    {
-                        "description": "MCUboot header size used for image signing and flash layout",
-                        "display": "MCUboot Header Size",
-                        "options": [
-                            {
-                                "default": true,
-                                "define": "CYBSP_MCUBOOT_HEADER_SIZE=0x400",
-                                "display": "0x400",
-                                "value": ""
-                            }
-                        ],
-                        "required": true,
-                        "type": "choice"
-                    }
-                ],
                 "connectivity_defines": [
                     {
                         "description": "Option to set the GPIO drive mode for the WL_REG_ON output.",
@@ -186,6 +156,36 @@
                                 "value": ""
                             }
                         ],
+                        "type": "choice"
+                    }
+                ],
+                "bsp_config_defines": [
+                    {
+                        "description": "Call the function cybsp_post_cfg_init after init_cycfg_all to perform custom initialization steps",
+                        "display": "Custom step after configurator init",
+                        "options": [
+                            {
+                                "default": false,
+                                "define": "CYBSP_POST_CFG_INIT",
+                                "display": "Enabled",
+                                "value": ""
+                            }
+                        ],
+                        "required": false,
+                        "type": "choice"
+                    },
+                    {
+                        "description": "MCUboot header size used for image signing and flash layout",
+                        "display": "MCUboot Header Size",
+                        "options": [
+                            {
+                                "default": true,
+                                "define": "CYBSP_MCUBOOT_HEADER_SIZE=0x400",
+                                "display": "0x400",
+                                "value": ""
+                            }
+                        ],
+                        "required": true,
                         "type": "choice"
                     }
                 ]

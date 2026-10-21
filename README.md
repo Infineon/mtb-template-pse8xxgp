@@ -2,7 +2,7 @@
 
 ## Overview
 
-mtb-template-pse8xxgp provides BSP template files for the BSP Assistant tool. mtb-template-pse8xxgp contains files for the PSOC EDGE family
+mtb-template-pse8xxgp provides BSP template files for the BSP Assistant tool. mtb-template-pse8xxgp contains files for the PSOC EDGE family.
 
 ## BSP Configuration
 
@@ -14,12 +14,11 @@ Components:
 Defines:
 * CYBSP_WIFI_CAPABLE - This define, disabled by default, causes the BSP to initialize the interface to an onboard wireless chip if it has one.
 
-
 ## More information
-* [Development Board Documentation](https://www.cypress.com/documentation/development-kitsboards)
-* [Cypress Semiconductor, an Infineon Technologies Company](https://www.cypress.com)
+* [Development Board Documentation](https://www.infineon.com/cms/en/design-support/finder-selection-tools/product-finder/evaluation-board/)
+* [Infineon Technologies AG](https://www.infineon.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox™](https://www.infineon.com/modustoolbox)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2022-2025.
+© Infineon Technologies AG or an affiliate of Infineon Technologies AG, 2022-2026.
